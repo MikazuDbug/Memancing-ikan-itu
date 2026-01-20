@@ -1,10 +1,11 @@
 --[[
-    MIZUKAGE FISH DATABASE
-    Hosted on GitHub
+    MIZUKAGE FISH DATABASE (UPDATED V5.1)
+    Based on Game Source: Jan 20, 2026
 ]]
 
 local FishDatabase = {
     Secret = {
+        -- [ EXISTING ]
         {name = "Whale Shark", min = 550, max = 800},
         {name = "Paus Corda", min = 500, max = 750},
         {name = "King Monster", min = 500, max = 750},
@@ -25,6 +26,11 @@ local FishDatabase = {
         {name = "Cype Darcoyellow", min = 580, max = 690},
         {name = "Doplin Pink", min = 350, max = 450},
         {name = "Doplin Blue", min = 350, max = 450},
+        
+        -- [ NEW FROM LOGS - JAN 2026 ]
+        {name = "Nagasa Putra", min = 720, max = 860},     -- NEW
+        {name = "While Bloodmon", min = 520, max = 690},   -- NEW
+        {name = "While BloodShack", min = 520, max = 690}, -- NEW
     },
     Mitos = {
         {name = "Amberjack", min = 30, max = 60},
@@ -33,7 +39,7 @@ local FishDatabase = {
         {name = "Angler Piranha", min = 50, max = 100},
         {name = "Sea Crocodile", min = 50, max = 100},
         {name = "Sand Tiger Shark", min = 70, max = 100},
-        {name = "White Shark ", min = 70, max = 100},
+        {name = "White Shark ", min = 70, max = 100}, -- Spasi di akhir sesuai game
     },
     Legendary = {
         {name = "Coelocanth", min = 30, max = 50},
@@ -89,7 +95,11 @@ local FishDatabase = {
         {name = "Mujaer", min = 20, max = 25},
         {name = "Salmon", min = 20, max = 25},
         {name = "Empa Fish", min = 20, max = 25},
+    },
+    -- [ BONUS: LIMITED FISH ]
+    Limited = {
+        {name = "Ston Luck", min = 60, max = 70}
     }
 }
 
-return FishDatabase -- WAJIB ADA INI
+return FishDatabase
